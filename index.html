@@ -17,7 +17,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        font-size: 11px;
+        font-size: 14px;
         text-align: center;
         margin-top: 50px;
         color: #ccc;
@@ -34,64 +34,83 @@
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="bg-dark-blue-main p-10 font-sans text-[18px] text-white/50">
-    <div class="p-5 mx-auto max-w-sm rounded-md shadow-2xl bg-dark-blue-card">
-      <div class="overflow-hidden relative rounded-md cursor-pointer group">
-        <img
-          src="images/image-equilibrium.jpg"
-          alt="Equilibrium"
-          class="w-full"
-        />
-        <div
-          class="hidden absolute inset-0 justify-center items-center group-hover:flex bg-cyan/50"
+  <body
+    class="min-h-screen flex flex-col justify-center items-center bg-dark-blue-main p-10 font-sans text-[18px] text-white/50"
+  >
+    <main>
+      <div
+        class="flex flex-col p-6 space-y-4 max-w-sm rounded-2xl shadow-2xl bg-dark-blue-card"
+      >
+        <!-- Card Image -->
+        <a
+          href="#"
+          class="block overflow-hidden relative rounded-lg cursor-pointer"
         >
-          <img src="images/icon-view.svg" alt="icon-view" />
-        </div>
-      </div>
+          <div alt="" aria-hidden="true">
+            <img
+              src="images/image-equilibrium.jpg"
+              alt="Equilibrium"
+              class="w-full"
+            />
+          </div>
 
-      <div class="mt-4">
-        <h1
-          class="text-2xl font-bold text-white cursor-pointer hover:text-cyan"
-        >
-          Equilibrium #3429
-        </h1>
-        <p class="mt-4">
-          Our Equilibrium collection promotes balance and calm.
-        </p>
-        <div class="flex justify-between items-center mt-4 font-bold">
-          <p class="flex items-center">
-            <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
-            <span class="ml-2 text-cyan">0.041 ETH</span>
-          </p>
-          <p class="flex items-center">
-            <img src="images/icon-clock.svg" alt="icon-clock" />
-            <span class="ml-2">3 days left</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="h-[1px] w-full bg-dark-blue-line mt-4"></div>
-
-      <div class="flex items-center mt-4">
-        <img
-          src="images/image-avatar.png"
-          alt="avatar"
-          class="w-10 h-10 rounded-full border border-white"
-        />
-        <p class="ml-3">
-          Creation of
-          <strong class="text-white cursor-pointer hover:text-cyan"
-            >Jules Wyvern</strong
+          <div
+            class="flex absolute inset-0 justify-center items-center opacity-0 transition duration-150 ease-out hover:opacity-100 bg-cyan/50"
+            alt=""
+            aria-hidden="true"
           >
-        </p>
-      </div>
-    </div>
+            <img src="images/icon-view.svg" alt="" aria-hidden="true" />
+          </div>
+        </a>
 
-    <div class="attribution">
+        <!-- Card Content -->
+        <div class="space-y-4">
+          <a
+            href="#"
+            class="text-2xl font-bold text-white transition duration-150 ease-out cursor-pointer hover:text-cyan"
+          >
+            Equilibrium #3429
+          </a>
+          <p class="">Our Equilibrium collection promotes balance and calm.</p>
+          <div class="flex justify-between items-center font-bold">
+            <p class="flex items-center">
+              <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
+              <span class="ml-2 text-cyan">0.041 ETH</span>
+            </p>
+            <p class="flex items-center">
+              <img src="images/icon-clock.svg" alt="icon-clock" />
+              <span class="ml-2">3 days left</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- line -->
+        <div class="h-[1px] w-full bg-dark-blue-line"></div>
+
+        <!-- User info -->
+        <div class="flex items-center">
+          <img
+            src="images/image-avatar.png"
+            alt="avatar"
+            class="w-10 h-10 rounded-full border border-white"
+          />
+          <p class="ml-3">
+            Creation of
+            <a
+              href="#"
+              class="font-bold text-white transition duration-150 ease-out cursor-pointer hover:text-cyan"
+              >Jules Wyvern</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://twitter.com/__kabirk">Kabir</a>.
-    </div>
+    </footer>
   </body>
 </html>
